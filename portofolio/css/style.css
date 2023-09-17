@@ -1,0 +1,141 @@
+body {
+  background-color: #e3fdfd;
+  /* font-weight: 400; */
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.href:hover {
+  color: blue !important;
+}
+/* .text-primary {
+  color: #71c9ce !important;
+  font-weight: bold !important;
+} */
+
+.btn-primary {
+  background-color: #71c9ce !important;
+  font-weight: 500 !important;
+}
+
+.navbar-tulisan-warna {
+  color: #fbffdcc2;
+}
+
+.active {
+  font-weight: bold !important;
+}
+
+.navbar-warna {
+  background-color: #71c9ce !important;
+}
+
+/* .text-warna {
+  color: white;
+} */
+
+/* Jumbotron */
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #e3fdfd;
+}
+h3 {
+  font-weight: 800;
+}
+.col-4 p {
+  font-weight: 500 !important;
+}
+
+.about-warna {
+  background-color: #cbf1f5;
+}
+
+.kontak-warna {
+  background-color: #cbf1f5;
+}
+
+.size-gambar {
+  width: 100%;
+  height: 12.5rem;
+}
+
+.warna-sertifikat {
+  background-color: #a6e3e9;
+}
+
+/* Animasi */
+
+.zoom:hover {
+  transform: scale(1.3) !important;
+}
+
+.animasi-kiri-jumbotron {
+  position: relative;
+  animation-name: animasi-kiri-jumbotron;
+  animation-duration: 5s;
+}
+
+.animasi-kanan-jumbotron {
+  position: relative;
+  animation-name: animasi-kanan-jumbotron;
+  animation-duration: 5s;
+}
+
+@keyframes animasi-kanan-jumbotron {
+  0% {
+    color: transparent;
+    left: 1000px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes animasi-kiri-jumbotron {
+  0% {
+    color: transparent;
+    right: 1000px;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+.animate__backInDown {
+  animation-duration: 5s;
+}
+
+.animate__fadeIn {
+  animation-duration: 15s !important;
+}
+
+/* ganti ke framework animate css 
+
+.animasi-atas-tentang {
+  position: relative;
+  animation-name: atas-tentang;
+  animation-duration: 10s;
+}
+
+@keyframes atas-tentang {
+  0% {
+    top: 200px;
+  }
+   25% {
+    top: 150px;
+  }
+  50% {
+    top: 100px;
+  }
+  75% {
+    top: 50px;
+  } 
+  100% {
+    top: 0px;
+  }
+}
+*/
