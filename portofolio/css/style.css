@@ -20,6 +20,11 @@ section {
   font-weight: 500 !important;
 }
 
+.btn-primary:hover {
+  background-color: darkcyan !important;
+  font-weight: bolder !important;
+}
+
 .navbar-tulisan-warna {
   color: #fbffdcc2;
 }
