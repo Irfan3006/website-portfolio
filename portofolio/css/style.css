@@ -7,6 +7,10 @@ section {
   padding-top: 5rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .href:hover {
   color: blue !important;
 }
