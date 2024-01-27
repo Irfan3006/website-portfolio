@@ -359,16 +359,16 @@
             </div>
             <form name="portofolio-contact-form">
               <div class="mb-3">
-                <label for="nama" class="form-label">Nama Lengkap</label>
-                <input class="form-control" id="nama" type="text" placeholder="Nama Lengkap..." name="nama" />
+                <label for="nama" class="form-label">Nama Lengkap <span style="color: red">*</span></label>
+                <input class="form-control" id="nama" type="text" placeholder="Nama Lengkap..." name="nama" required />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="example@email.com" name="email" />
+                <label for="email" class="form-label">Email Address <span style="color: red">*</span></label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="example@email.com" name="email" required />
               </div>
               <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3" placeholder="Isikan Pesan Anda..." name="pesan"></textarea>
+                <label for="pesan" class="form-label">Pesan <span style="color: red">*</span></label>
+                <textarea class="form-control" id="pesan" rows="3" placeholder="Isikan Pesan Anda..." name="pesan" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
