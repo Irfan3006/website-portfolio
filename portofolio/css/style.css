@@ -21,12 +21,14 @@ a {
 
 .btn-primary {
   background-color: #71c9ce !important;
+  border-color: #63b5b9 !important;
   font-weight: 500 !important;
 }
 
 .btn-primary:hover {
+  border-color: #63b5b9 !important;
   background-color: darkcyan !important;
-  font-weight: bolder !important;
+  font-weight: 500 !important;
 }
 
 .navbar-tulisan-warna {
