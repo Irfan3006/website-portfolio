@@ -130,9 +130,9 @@
     <!-- Jumbotron start -->
     <section class="jumbotron text-center">
       <img
-        src="/assets/img/profil.jpg"
+        src="/assets/img/profile.png"
         alt="Foto Irfan Syarifudin"
-        width="200"
+        width="210"
         class="rounded-circle img-thumbnail animasi-bawah-jumbotron zoom"
         href="#"
       />
@@ -528,9 +528,6 @@
               </div>
             </div>
           </div>
-          <!-- <div class="col-md-4 mb-3">
-            <img src="/assets/img/plus.png" width="180rem" />z
-          </div> -->
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -614,20 +611,14 @@
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        // Ketika Tombol Submit diklik
-        // Tampilkan loading
         btnLoading.classList.toggle("d-none");
         btnKirim.classList.toggle("d-none");
 
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            // Ketika Tombol Submit diklik
-            // hilangkan loading
             btnLoading.classList.toggle("d-none");
             btnKirim.classList.toggle("d-none");
-            // tampilkan alert
             myAlert.classList.toggle("d-none");
-            // reset form
             form.reset();
             console.log("Success!", response);
           })
