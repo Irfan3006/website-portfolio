@@ -4,7 +4,6 @@
 
 body {
   background-color: #e3fdfd;
-  /* font-weight: 400; */
 }
 
 section {
@@ -18,10 +17,7 @@ a {
 .href:hover {
   color: blue !important;
 }
-/* .text-primary {
-  color: #71c9ce !important;
-  font-weight: bold !important;
-} */
+
 
 .btn-primary {
   background-color: #71c9ce !important;
@@ -47,9 +43,6 @@ a {
   background-color: #71c9ce !important;
 }
 
-/* .text-warna {
-  color: white;
-} */
 
 /* Jumbotron */
 .jumbotron {
@@ -151,29 +144,4 @@ h3 {
   animation-duration: 15s !important;
 }
 
-/* ganti ke framework animate css 
 
-.animasi-atas-tentang {
-  position: relative;
-  animation-name: atas-tentang;
-  animation-duration: 10s;
-}
-
-@keyframes atas-tentang {
-  0% {
-    top: 200px;
-  }
-   25% {
-    top: 150px;
-  }
-  50% {
-    top: 100px;
-  }
-  75% {
-    top: 50px;
-  } 
-  100% {
-    top: 0px;
-  }
-}
-*/
