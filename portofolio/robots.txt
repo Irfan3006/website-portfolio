@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://irfan-syarifudin.vercel.app/sitemap.xml
+Sitemap: https://irfansyarifudin.my.id/sitemap.xml
