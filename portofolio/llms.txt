@@ -1,0 +1,36 @@
+# Irfan Syarifudin - Portfolio
+
+> Irfan Syarifudin is a Computer Engineering student at Universitas Amikom Yogyakarta specializing in Cyber Security, Networking, and Web Development. He is passionate about offensive and defensive security, Capture The Flag (CTF) competitions, and building secure systems.
+
+## Contact & Socials
+
+- [GitHub](https://github.com/Irfan3006): Open-source repositories and code projects.
+- [LinkedIn](https://www.linkedin.com/in/irfan-syarifudin): Professional networking profile.
+- [Instagram](https://www.instagram.com/irfann_404): Personal social media profile.
+
+## Main Pages
+
+- [Home Page](https://irfansyarifudin.my.id/): Main index page featuring profile, tech stack, highlighted projects, achievements, certificates, and contact.
+- [Projects Showcase](https://irfansyarifudin.my.id/projects.html): Dedicated page showcasing all completed projects.
+
+## Tech Stack
+
+- **Cyber Security**: Offensive security, defensive security, vulnerability research, and Capture The Flag (CTF) competitions.
+- **Networking**: Secure networks and infrastructure.
+- **Web Development**: HTML, CSS, JavaScript, Bootstrap, and Python Flask.
+- **Linux & Bash**: Command-line utilities, shell scripting.
+- **IoT & Hardware**: Arduino, C++, hardware integration.
+
+## Key Projects
+
+- [Web Checker](https://webckf.vercel.app/): Instant HTTP Security Headers analyzer (HSTS, CSP, X-Frame) to identify website vulnerabilities.
+- [RISMA Al-Falaah Website](https://risma-alfalaah.vercel.app/): Official website for RISMA Al-Falaah Karangjambe community.
+- [IoT Smart Lock](https://bit.ly/arduino-door): Arduino-based physical security system utilizing keypad and touch sensor logic.
+
+## Certifications & Achievements
+
+- **Cyber Security Achievements**: Cyber Security Product Awards & CTF Competition trophies.
+- [Junior Cyber Security Certificate](https://drive.google.com/file/d/1VVm_TEi9QfJyfrPkuWalOginQajvvKqq/view?usp=sharing): Certified by BNSP RI.
+- [Junior Technical Support Certificate](https://drive.google.com/file/d/1dtcRDh66CT6qwuh5Li0aOOsEHY-YxaB8/view): Certified by BNSP RI.
+- [Ethical Hacking Bootcamp Certificate](https://ude.my/UC-4468ccc8-9ef3-46d1-b711-3c6fee0bd093): Certified by Udemy & ZTM.
+- [All Certificates Folder](https://drive.google.com/drive/folders/1AgGrMPuDbaNqnHa7ZSPsDFLPnxdRDeP1?usp=sharing): Google Drive folder containing all certifications.
