@@ -25,6 +25,7 @@
 
 - [Web Checker](https://webckf.vercel.app/): Instant HTTP Security Headers analyzer (HSTS, CSP, X-Frame) to identify website vulnerabilities.
 - [HIMTEKK](https://himtekk.com): Official website for HIMTEKK organization, serving as a hub for activities and information.
+- [Cek Data Bocor](https://databocor.web.id/): Layanan gratis untuk cek email, akun, dan password yang bocor di database internet secara aman.
 - [IoT Smart Lock](https://bit.ly/arduino-door): Arduino-based physical security system utilizing keypad and touch sensor logic.
 - [RISMA Al-Falaah Website](https://risma-alfalaah.vercel.app/): Official website for RISMA Al-Falaah Karangjambe community.
 - [Sibra Tech](https://sibra.store): Software House specializing in secure, fast, and high-performance websites with advanced cybersecurity protection.
