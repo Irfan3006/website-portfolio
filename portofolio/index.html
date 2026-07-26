@@ -57,15 +57,22 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    </noscript>
 
     <!-- Libraries -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" media="print" onload="this.media='all'" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
@@ -76,7 +83,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
         <a class="navbar-brand font-mono fw-bold text-cyan" href="#home"> <i class="bi bi-terminal-fill me-2"></i>root@irfan:~# </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka Navigasi">
           <i class="bi bi-list text-cyan fs-2"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -120,15 +127,15 @@
               <a href="#contact" class="btn btn-outline-light btn-lg font-mono rounded-1">Contact Me</a>
             </div>
             <div class="mt-5 social-links">
-              <a href="https://github.com/Irfan3006" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/irfan-syarifudin" target="_blank"><i class="bi bi-linkedin"></i></a>
-              <a href="https://www.instagram.com/irfann_404" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://github.com/Irfan3006" target="_blank" rel="noopener noreferrer" aria-label="GitHub Irfan Syarifudin"><i class="bi bi-github" aria-hidden="true"></i></a>
+              <a href="https://www.linkedin.com/in/irfan-syarifudin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Irfan Syarifudin"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/irfann_404" target="_blank" rel="noopener noreferrer" aria-label="Instagram Irfan Syarifudin"><i class="bi bi-instagram" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="col-lg-5 text-center" data-aos="fade-left">
             <div class="profile-container position-relative">
               <div class="profile-glow"></div>
-              <img src="assets/img/profile.webp" alt="Irfan" class="img-fluid rounded-3 position-relative z-2 profile-img shadow-lg" />
+              <img src="assets/img/profile.webp" alt="Foto Profil Irfan Syarifudin" width="600" height="600" fetchpriority="high" decoding="async" class="img-fluid rounded-3 position-relative z-2 profile-img shadow-lg" />
             </div>
           </div>
         </div>
@@ -247,13 +254,15 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
             <div class="project-card rounded-2 overflow-hidden h-100 position-relative">
               <div class="card-img-wrapper">
-              <a href="https://webckf.vercel.app/" target="_blank">  <img src="assets/img/web-checker.webp" class="img-fluid" alt="Web Checker" /></a>
+                <a href="https://webckf.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Buka website Web Checker">
+                  <img src="assets/img/web-checker.webp" width="800" height="452" loading="lazy" decoding="async" class="img-fluid" alt="Web Checker" />
+                </a>
               </div>
               <div class="project-content p-4 bg-dark-card h-100">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <i class="bi bi-folder2-open text-cyan fs-3"></i>
                   <div class="project-links">
-                    <a href="https://webckf.vercel.app/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="https://webckf.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Buka website Web Checker"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
                   </div>
                 </div>
                 <h3 class="h5 text-white fw-bold hover-cyan">Web Checker</h3>
@@ -271,13 +280,15 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="project-card rounded-2 overflow-hidden h-100 position-relative">
               <div class="card-img-wrapper">
-              <a href="https://himtekk.com" target="_blank">  <img src="assets/img/himtekk.webp" class="img-fluid" alt="HIMTEKK" /></a>
+                <a href="https://himtekk.com" target="_blank" rel="noopener noreferrer" aria-label="Buka website HIMTEKK">
+                  <img src="assets/img/himtekk.webp" width="800" height="452" loading="lazy" decoding="async" class="img-fluid" alt="HIMTEKK" />
+                </a>
               </div>
               <div class="project-content p-4 bg-dark-card h-100">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <i class="bi bi-folder2-open text-cyan fs-3"></i>
                   <div class="project-links">
-                    <a href="https://himtekk.com" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="https://himtekk.com" target="_blank" rel="noopener noreferrer" aria-label="Buka website HIMTEKK"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
                   </div>
                 </div>
                 <h3 class="h5 text-white fw-bold hover-cyan">HIMTEKK</h3>
@@ -294,15 +305,15 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
             <div class="project-card rounded-2 overflow-hidden h-100 position-relative">
               <div class="card-img-wrapper">
-                <a href="https://databocor.web.id/" target="_blank">
-                  <img src="assets/img/databocor.webp" class="img-fluid" alt="Cek Data Bocor" />
+                <a href="https://databocor.web.id/" target="_blank" rel="noopener noreferrer" aria-label="Buka website Cek Data Bocor">
+                  <img src="assets/img/databocor.webp" width="800" height="500" loading="lazy" decoding="async" class="img-fluid" alt="Cek Data Bocor" />
                 </a>
               </div>
               <div class="project-content p-4 bg-dark-card h-100">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <i class="bi bi-folder2-open text-cyan fs-3"></i>
                   <div class="project-links">
-                    <a href="https://databocor.web.id/" target="_blank"><i class="bi bi-box-arrow-up-right"></i></a>
+                    <a href="https://databocor.web.id/" target="_blank" rel="noopener noreferrer" aria-label="Buka website Cek Data Bocor"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i></a>
                   </div>
                 </div>
                 <h3 class="h5 text-white fw-bold hover-cyan">Cek Data Bocor</h3>
@@ -319,7 +330,7 @@
           </div>
         </div>
         <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
-          <a href="https://github.com/Irfan3006?tab=repositories" onclick="window.open('projects.html', '_blank')" class="btn btn-outline-cyan font-mono rounded-1"
+          <a href="projects.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan font-mono rounded-1"
             >View All Projects</a
           >
         </div>
@@ -339,7 +350,7 @@
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="150">
             <div class="achievement-card rounded-2 overflow-hidden h-100 position-relative bg-dark-card border border-secondary shadow-lg">
               <div class="achievement-img-wrapper">
-                <img src="assets/img/piagam_Siber.webp" class="img-fluid" alt="Siber Security Achievement" />
+                <img src="assets/img/piagam_Siber.webp" width="1200" height="939" loading="lazy" decoding="async" class="img-fluid" alt="Piagam Cyber Security Product Awards" />
               </div>
               <div class="achievement-content p-4 text-center">
                 <h3 class="h5 text-white fw-bold mb-2">Cyber Security Achievement</h3>
@@ -350,7 +361,7 @@
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="50">
             <div class="achievement-card rounded-2 overflow-hidden h-100 position-relative bg-dark-card border border-secondary shadow-lg">
               <div class="achievement-img-wrapper">
-                <img src="assets/img/piagam_CTF.webp" class="img-fluid" alt="Capture The Flag Achievement" />
+                <img src="assets/img/piagam_CTF.webp" width="1200" height="908" loading="lazy" decoding="async" class="img-fluid" alt="Piagam Capture The Flag Competition" />
               </div>
               <div class="achievement-content p-4 text-center">
                 <h3 class="h5 text-white fw-bold mb-2">CTF Achievement</h3>
@@ -372,11 +383,11 @@
         <div class="row g-3">
           <div class="col-md-6 col-lg-4" data-aos="fade-up">
             <div class="cert-item d-flex align-items-start p-3 bg-dark-card rounded border border-dark-subtle h-100">
-              <i class="bi bi-patch-check-fill text-cyan fs-4 me-3"></i>
+              <i class="bi bi-patch-check-fill text-cyan fs-4 me-3" aria-hidden="true"></i>
               <div>
-                <h5 class="text-white h6 mb-1">Ethical Hacking Bootcamp</h5>
+                <h3 class="text-white h6 mb-1">Ethical Hacking Bootcamp</h3>
                 <p class="text-secondary font-mono small mb-1">Udemy & ZTM</p>
-                <a href="https://ude.my/UC-4468ccc8-9ef3-46d1-b711-3c6fee0bd093" target="_blank" class="small text-cyan text-decoration-none"
+                <a href="https://ude.my/UC-4468ccc8-9ef3-46d1-b711-3c6fee0bd093" target="_blank" rel="noopener noreferrer" aria-label="Lihat Sertifikat Ethical Hacking Bootcamp" class="small text-cyan text-decoration-none"
                   >View Certificate</a
                 >
               </div>
@@ -384,13 +395,15 @@
           </div>
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="cert-item d-flex align-items-start p-3 bg-dark-card rounded border border-dark-subtle h-100">
-              <i class="bi bi-patch-check-fill text-cyan fs-4 me-3"></i>
+              <i class="bi bi-patch-check-fill text-cyan fs-4 me-3" aria-hidden="true"></i>
               <div>
-                <h5 class="text-white h6 mb-1">Junior Cyber Security</h5>
+                <h3 class="text-white h6 mb-1">Junior Cyber Security</h3>
                 <p class="text-secondary font-mono small mb-1">BNSP RI</p>
                 <a
                   href="https://drive.google.com/file/d/1VVm_TEi9QfJyfrPkuWalOginQajvvKqq/view?usp=sharing"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Lihat Sertifikat Junior Cyber Security BNSP"
                   class="small text-cyan text-decoration-none"
                   >View Certificate</a
                 >
@@ -399,13 +412,15 @@
           </div>
           <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="cert-item d-flex align-items-start p-3 bg-dark-card rounded border border-dark-subtle h-100">
-              <i class="bi bi-patch-check-fill text-cyan fs-4 me-3"></i>
+              <i class="bi bi-patch-check-fill text-cyan fs-4 me-3" aria-hidden="true"></i>
               <div>
-                <h5 class="text-white h6 mb-1">Junior Technical Support</h5>
+                <h3 class="text-white h6 mb-1">Junior Technical Support</h3>
                 <p class="text-secondary font-mono small mb-1">BNSP RI</p>
                 <a
                   href="https://drive.google.com/file/d/1dtcRDh66CT6qwuh5Li0aOOsEHY-YxaB8/view"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Lihat Sertifikat Junior Technical Support BNSP"
                   class="small text-cyan text-decoration-none"
                   >View Certificate</a
                 >
@@ -417,6 +432,7 @@
           <a
             href="https://drive.google.com/drive/folders/1AgGrMPuDbaNqnHa7ZSPsDFLPnxdRDeP1?usp=sharing"
             target="_blank"
+            rel="noopener noreferrer"
             class="btn btn-outline-cyan font-mono rounded-1"
             >View All Certificates</a
           >
@@ -492,14 +508,14 @@
     <!-- Footer -->
     <footer class="py-4 text-center font-mono text-secondary small bg-darker">
       <div class="container">
-        <p class="mb-0">Designed & Built by <a href="#" style="text-decoration: none;"><span class="text-cyan">Irfan Syarifudin</span></a></p>
+        <p class="mb-0">Designed & Built by <a href="#home" style="text-decoration: none;" aria-label="Irfan Syarifudin Home"><span class="text-cyan">Irfan Syarifudin</span></a></p>
         <p class="mb-0 opacity-50">© <span id="year"></span> All rights reserved.</p>
       </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();

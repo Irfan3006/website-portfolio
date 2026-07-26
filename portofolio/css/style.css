@@ -41,9 +41,16 @@ body {
 /* TYPOGRAPHY  */
 .font-mono { font-family: var(--font-mono) !important; }
 .text-cyan { color: var(--accent-cyan) !important; }
-.text-light-50 { color: var(--text-secondary) !important; }
+.text-light-50 { color: #a8b2d1 !important; }
 .bg-darker { background-color: #020c1b !important; }
 .bg-dark-card { background-color: var(--bg-secondary) !important; }
+
+footer {
+  color: #a8b2d1 !important;
+}
+footer .opacity-50 {
+  opacity: 0.85 !important;
+}
 
 /* NAVBAR  */
 .navbar {
