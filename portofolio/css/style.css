@@ -327,3 +327,35 @@ textarea:-webkit-autofill:focus {
 .achievement-content {
     background-color: var(--bg-secondary);
 }
+
+/* CERTIFICATION CARDS */
+.cert-item {
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.cert-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 10px 25px -10px rgba(100, 255, 218, 0.2);
+}
+
+.cert-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.cert-item:hover .cert-icon-wrapper {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+}
+
+.cert-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
