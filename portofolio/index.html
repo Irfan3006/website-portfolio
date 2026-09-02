@@ -503,6 +503,10 @@
                 ></textarea>
                 <label for="pesan" class="text-secondary">Pesan</label>
               </div>
+              <!-- Anti-bot honeypot field -->
+              <div class="d-none" aria-hidden="true">
+                <input type="text" name="_honeypot" tabindex="-1" autocomplete="off" />
+              </div>
               <div class="d-grid">
                 <button type="submit" class="btn btn-cyan btn-lg font-mono rounded-1 btn-kirim">Send Message</button>
                 <button class="btn btn-cyan btn-lg font-mono rounded-1 btn-loading d-none" type="button" disabled>
@@ -605,10 +609,26 @@
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+
+        // Anti-bot honeypot check
+        if (form.elements["_honeypot"] && form.elements["_honeypot"].value.trim() !== "") {
+          form.reset();
+          return;
+        }
+
+        // Anti-spam cooldown (30 seconds)
+        const lastSubmit = localStorage.getItem("last_form_submit");
+        const now = Date.now();
+        if (lastSubmit && now - parseInt(lastSubmit, 10) < 30000) {
+          alert("Mohon tunggu 30 detik sebelum mengirim pesan kembali.");
+          return;
+        }
+
         btnLoading.classList.remove("d-none");
         btnKirim.classList.add("d-none");
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
+            localStorage.setItem("last_form_submit", Date.now().toString());
             btnLoading.classList.add("d-none");
             btnKirim.classList.remove("d-none");
             myAlert.classList.remove("d-none");
@@ -617,7 +637,11 @@
               myAlert.classList.add("d-none");
             }, 5000);
           })
-          .catch((error) => console.error("Error!", error.message));
+          .catch((error) => {
+            btnLoading.classList.add("d-none");
+            btnKirim.classList.remove("d-none");
+            console.error("Error!", error.message);
+          });
       });
       // Custom ScrollSpy
       const sections = document.querySelectorAll("section[id]");
