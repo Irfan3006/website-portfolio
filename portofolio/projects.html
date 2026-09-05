@@ -36,7 +36,7 @@
     <meta property="twitter:image" content="https://irfansyarifudin.my.id/assets/img/projek-portofolio.webp" />
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6VZWT34PR"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z6VZWT34PR" fetchpriority="low"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -54,6 +54,9 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png" />
 
+    <!-- Preload Showcase Image (LCP) -->
+    <link rel="preload" as="image" href="assets/img/web-checker.webp" type="image/webp" fetchpriority="high" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -64,7 +67,7 @@
     </noscript>
 
     <!-- Libraries -->
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" fetchpriority="high" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" media="print" onload="this.media='all'" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'" />
@@ -116,7 +119,7 @@
             <div class="project-card rounded-2 overflow-hidden h-100 position-relative">
               <div class="card-img-wrapper">
                 <a href="https://webckf.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Buka website Web Checker">
-                  <img src="assets/img/web-checker.webp" width="800" height="452" loading="lazy" decoding="async" class="img-fluid" alt="Web Checker" />
+                  <img src="assets/img/web-checker.webp" width="800" height="452" fetchpriority="high" decoding="async" class="img-fluid" alt="Web Checker" />
                 </a>
               </div>
               <div class="project-content p-4 bg-dark-card h-100">
